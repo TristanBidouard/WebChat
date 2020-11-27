@@ -1,0 +1,166 @@
+* { 
+	margin: 0; 
+	padding: 0; 
+	box-sizing: border-box;
+}
+
+html, body{
+	height: 100%;
+}
+
+html{
+	font-family: Roboto, Helvetica;
+	background-image: linear-gradient( 135deg, #393e46 10%, #222831 100%);
+
+;
+	font-size: 10px;
+}
+
+body{
+	display: grid;
+	place-items: center;
+}
+
+
+#application{
+	width: 500px; 
+	height: 650px;
+	border: solid;
+	border-radius: 10px;
+	border-color: #00adb5;
+	background: #eeeeee;
+}
+
+/*---------- TOP BAR ----------*/
+
+#top-bar{
+	height: 10%;
+	width: 100%;
+	background: #00adb5;
+	
+	display: inline-flex;
+}
+
+#logo-container{
+	height: 100%;
+	width: 32%;
+	border-radius: 10px 0px 0px 0px;
+	display: grid;
+	place-items: center;
+}
+
+#logo{
+	height: 50%;
+	width: 50%;
+}
+
+#title-container{
+	height: 100%;
+	width: 85%;
+	border-radius: 0px 10px 0px 0px;
+	display: grid;
+	place-items: center;
+}
+
+#title{
+	font: 4em "Nerko One", sans-serif;
+	color: white;
+}
+
+/*----------- FORM -----------*/
+
+#form-container{
+	width: 100%; 
+	height: 90%;
+	border-radius: 0px 0px 10px 10px;
+	display: flex;
+	flex-direction: column; 
+}
+
+#join-container{
+	width: 100%; 
+	height: 35%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#join{
+	font: 3em "Roboto", sans-serif;
+	color: #00adb5;
+	font-weight: 900;
+}
+
+#create{
+	margin-top: 10px;
+	font: 1.5em "Roboto", sans-serif;
+	color: #808080;
+	font-weight: 200;
+}
+
+
+#username-container, #password-container{
+	width: 100%; 
+	height: 10%;
+	display: grid;
+	place-items: center;
+}
+
+#username-input, #password-input{
+	height: 30px;
+	width: 50%;
+	margin-left: 10px;
+	background: #dfdfdf;
+	padding-left: 10px;
+	border: none;
+	font: 1.3em "Roboto", sans-serif;
+	border-radius: 10px;
+	color: #808080;
+	caret-color: #00adb5;
+}
+
+#username-input:focus, #password-input:focus{
+	outline: none;
+}
+
+#register-container{
+	width: 100%; 
+	height: 20%;
+	display: grid;
+	place-items: center;
+}
+
+#register-button{
+	height: 30px;
+	width: 50%;
+	margin-left: 10px;
+	background: #00adb5;
+	padding-left: 10px;
+	border: none;
+	font: 1.4em "Roboto", sans-serif;
+	border-radius: 10px;
+	color: #dfdfdf;
+	font-weight: bold;
+	cursor:pointer;
+}
+
+#error-container{
+	width: 100%; 
+	height: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#error{
+	display: none;
+	font: 1.3em "Roboto", sans-serif;
+	color: red;
+	font-weight: 200;
+}
+
+
+
+
+

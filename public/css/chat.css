@@ -1,0 +1,286 @@
+* { 
+	margin: 0; 
+	padding: 0; 
+	box-sizing: border-box;
+}
+
+html, body{
+	height: 100%;
+}
+
+html{
+	font-family: Roboto, Helvetica;
+	background-image: linear-gradient( 135deg, #393e46 10%, #222831 100%);
+
+;
+	font-size: 10px;
+}
+
+body{
+	display: grid;
+	place-items: center;
+}
+
+
+#application{
+	width: 1000px; 
+	height: 650px;
+	background: #eeeeee;
+
+	border: solid;
+	border-radius: 10px;
+	border-color: #00adb5;
+}
+
+#chatusers-container{
+	width: 100%; 
+	height: 90%;
+	border-radius: 0px 0px 10px 10px;
+	display: inline-flex;
+
+}
+
+/*---------- TOP BAR ----------*/
+
+#top-bar{
+	height: 10%;
+	width: 100%;
+	background: #00adb5;
+	
+	display: inline-flex;
+}
+
+#logo-container{
+	height: 100%;
+	width: 32%;
+	border-radius: 10px 0px 0px 0px;
+	display: grid;
+	place-items: center;
+}
+
+#logo{
+	height: 50%;
+	width: 50%;
+}
+
+#title-container{
+	height: 100%;
+	width: 85%;
+	border-radius: 0px 10px 0px 0px;
+	display: grid;
+	place-items: center;
+}
+
+#title{
+	font: 4em "Nerko One", sans-serif;
+	color: white;
+}
+
+/*---------- BOTTOM BAR ----------*/
+#chat-bar{
+	height: 7%;
+	width: 100%;
+	margin-top: 6px;
+	display: inline-flex;
+
+}
+
+#text-message{
+	height: 70%;
+	width: 89%;
+	margin-left: 10px;
+	background: #dfdfdf;
+	padding-left: 10px;
+	border: none;
+	font: 1.3em "Roboto", sans-serif;
+	border-radius: 10px;
+	color: #808080;
+	caret-color: #00adb5;
+}
+
+#text-message:focus{
+    outline: none;
+}
+
+#button-container{
+
+	width: 8%;
+	margin-left: 10px;
+	display: block;
+    margin: auto;
+}
+
+#send-button{
+	height: 100%;
+	width: 100%;
+	fill: #00adb5;
+	fill-opacity: 0.7;
+	margin-left: 25%;
+}
+
+#send-button:hover {
+  fill: #00adb5;
+  fill-opacity: 1;
+  cursor:pointer;
+}
+
+
+/*---------- CHAT ----------*/
+
+#chat-container{
+	height: 100%;
+	width: 80%;
+}
+
+#chat{
+	height: 93%;
+	width: 100%;
+	overflow-y: scroll;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.mymessage-row{
+	display: grid;
+	grid-template-columns: 70%;
+	margin-bottom: 10px;
+	justify-content: end;
+	justify-items: end;
+	padding-right: 20px;
+}
+
+.mymessage-container{
+	background: rgba(0, 170, 179, 0.1);
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.myusername{
+	height: 20%;
+	width: 100%;
+	font: 1.2em "Roboto", sans-serif;
+	color: #00adb5;
+}
+
+.mymessage{
+	margin-top: 5px;
+	width: 100%;
+	font: 1.3em "Roboto", sans-serif;
+	color: #808080;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+}
+
+.mytime{
+	margin-top: 5px;
+	height: 8%;
+	width: 100%;
+	font: 1em "Roboto", sans-serif;
+	color: #A0A0A0;
+	text-align: right;
+}
+
+
+.chatmessage-row{
+	display: grid;
+	grid-template-columns: 70%;
+	margin-bottom: 10px;
+	justify-content: start;
+	justify-items: start;
+	padding-left: 20px;
+}
+
+.chatmessage-container{
+	background: rgba(50, 50, 50, 0.1);
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.chatusername{
+	height: 20%;
+	width: 100%;
+	font: 1.2em "Roboto", sans-serif;
+	color: #00adb5;
+}
+
+.chatmessage{
+	margin-top: 5px;
+	width: 100%;
+	font: 1.3em "Roboto", sans-serif;
+	color: #808080;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+}
+
+.chattime{
+	margin-top: 5px;
+	height: 8%;
+	width: 100%;
+	font: 1em "Roboto", sans-serif;
+	color: #A0A0A0;
+	text-align: right;
+}
+
+/*---------- USERS ----------*/
+
+#users-container{
+	width: 30%; 
+	height: 100%;
+	border-radius: 0px 0px 0px 10px;
+	background: rgba(50, 50, 50, 0.1);
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.user-container{
+	margin-top: 10px;
+	height: 40px;
+	border-radius: 10px;
+	width: 100%;
+	background: #eeeeee;
+	display: inline-flex;
+}
+
+.connected-logo-container{
+	width: 15%;
+	height: 100%;
+	border-radius: 10px 0px 0px 10px;
+
+}
+
+.connected-logo{ 
+	margin: 10px;
+	padding-left: 10px;
+	height: 50%;
+	fill: #00adb5;
+}
+
+.user-name-container{
+	width: 100%;
+	height: 100%;
+	border-radius: 0px 10px 10px 0px;
+	display: grid;
+	place-items: center start;
+}
+
+
+.user-name-container{
+	padding-left: 10px;
+	font: 1.4em "Roboto", sans-serif;
+	color: #808080;
+}
+
+.myuser-name{
+	color: #00adb5;
+}
+
+
+
+
+
+      

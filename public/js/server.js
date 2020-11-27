@@ -23,7 +23,7 @@ var CHAT_PAGE = "/chat.html"
 var REG_PAGE = "/register.html"
 
 var DB_NAME = "WebChatUsers";
-var DB_URL = "mongodb+srv://Tristan:Footufbb.7913@cluster0.6pttu.mongodb.net/" + DB_NAME + "?retryWrites=true&w=majority";
+var DB_URL = "mongodb+srv://Tristan:MYPASSWORD@cluster0.6pttu.mongodb.net/" + DB_NAME + "?retryWrites=true&w=majority";
 var LAST_USERNAME = "";
 
 //-------------------------------------------------
